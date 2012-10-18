@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+
+table {
+	width: 960px !important;
+	margin: 0 auto;
+}

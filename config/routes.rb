@@ -14,6 +14,8 @@ N1::Application.routes.draw do
   get '/teams/:id' => 'teams#show', :as => 'team'
   put '/teams/:id' => 'teams#update', :as => 'team'
   delete '/teams/:id' => 'teams#destroy', :as => 'team'
+  
+  get '/pages/query' => 'pages#query'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
