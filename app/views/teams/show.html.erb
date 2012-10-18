@@ -1,0 +1,6 @@
+<table class="table">
+<thead><tr><th>Number</th><th>Player Name</th><th>Position</th><th>College</th></tr></thead>
+<tbody>
+<% @team.roster.each do |player| %>
+<tr><td><%= player.number %></td><td><%= player %></td><td><%= player.position %></td><td><%= player.college %></td></tr>
+<% end %>

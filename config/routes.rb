@@ -1,4 +1,20 @@
 N1::Application.routes.draw do
+  get '/players' => 'players#index', :as => 'players'
+  post '/players' => 'players#create', :as => 'players'
+  get '/players/new' => 'players#new', :as => 'new_player'
+  get '/players/:id/edit' => 'players#edit', :as => 'edit_player'
+  get '/players/:id' => 'players#show', :as => 'player'
+  put '/players/:id' => 'players#update', :as => 'player'
+  delete '/players/:id' => 'players#destroy', :as => 'player'
+
+  get '/teams' => 'teams#index', :as => 'teams'
+  post '/teams' => 'teams#create', :as => 'teams'
+  get '/teams/new' => 'teams#new', :as => 'new_team'
+  get '/teams/:id/edit' => 'teams#edit', :as => 'edit_team'
+  get '/teams/:id' => 'teams#show', :as => 'team'
+  put '/teams/:id' => 'teams#update', :as => 'team'
+  delete '/teams/:id' => 'teams#destroy', :as => 'team'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
