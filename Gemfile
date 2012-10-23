@@ -25,6 +25,8 @@ gem 'jquery-rails'
 gem 'mechanize'
 gem 'pry-rails'
 
+gem 'rabl'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

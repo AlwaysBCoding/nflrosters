@@ -2,11 +2,12 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.json
   def index
-    @teams = Team.all
+    @teams = Team.order("city asc")
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @teams }
+      format.json # { render json: @teams }
+      format.xml { render xml: @teams }
     end
   end
 

@@ -8,7 +8,7 @@ class Team < ActiveRecord::Base
   end
   
   def to_s
-    "#{self.city} #{self.name}"
+    "#{self.city} #{self.name} (#{self.conference})"
   end
   
   def to_param

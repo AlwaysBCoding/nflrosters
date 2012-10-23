@@ -1,8 +1,10 @@
-<table class="table">
-	<thead><tr><th>List of NFC Quarterbacks</th></tr></thead>
+<table class="table table-striped">
+	<thead><tr><th>List of NFC Quarterbacks</th></tr>
+		   <tr><th>Team</th><th>Number</th><th>Position</th><th>Name</th><th>College</th></tr>
+	</thead>
 	<tbody>
-		<% @qb_list.each do |qb| %>
-		<tr><td><%= qb.team %></td><td><%= qb %></td><td><%= qb.college %></td></tr>
+		<% @players.each do |player| %>
+		<tr><td><%= player.team %></td><%# <-- ACTIVE RECORD RELATION %><td><%= player.number %></td><td><%= player.position %></td><td><%= player %></td><td><%= player.college %></td></tr>
 		<% end %>
 	</tbody>
 </table>	
